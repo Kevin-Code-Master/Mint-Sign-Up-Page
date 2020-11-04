@@ -1,0 +1,392 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	background-color: teal;
+}
+.header h3{
+	margin: auto;
+	color: white;
+	font-family: Tahoma;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.header a{
+	color: white;
+	text-decoration: underline;
+}
+.header a:hover{
+	cursor: pointer;
+}
+/*font awesome for the header-info*/
+#info{
+	margin: 0 10px;
+	font-size: 25px;
+}
+#logo-image{
+	width: 80px;
+	height: 25px;
+}
+/*navigation container*/
+.nav{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+/*logo image*/
+#logo{
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Navigation container*/
+.nav-lists{
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	height: 40px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*buttons for the navigation*/
+.dropbtn{
+	height: inherit;
+	margin: 20px;
+	background-color: white;
+	outline: none;
+	border:none;
+	font-size: 15px;
+	font-family: Tahoma;
+	font-weight: bold;
+	color: grey;
+}
+.dropbtn:hover{
+	border-bottom: 3px solid teal;
+	cursor: pointer;
+	color: black;
+}
+/*Sign up and sign in container*/
+.button-action{
+	width: 30%;
+	height: 40px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/*Id for the sign in and sign up buttons*/
+.submit{
+	width: 95px;
+	height: 25px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-family: Tahoma;
+	font-weight: bold;
+	text-align: center;
+}
+.submit:hover{
+	cursor: pointer;
+}
+#sign-up{
+	background-color: orange;
+	color: white;
+}
+#sign-in{
+	border: 2px solid teal;
+	color: teal;
+}
+#lock{
+	margin: 0 10px 0;
+	font-size: 18px;
+}
+/*id for the credits button*/
+#credits{
+	width: 160px;
+}
+#works{
+	width: 110px;
+}
+#works:hover ~.dropbtn-content{
+	display: block;
+	position: absolute;
+	top: 118.7px;
+	left: 157px;
+	z-index: 1;
+}
+#investing{
+	width: 90px;
+}
+#loans{
+	width: 50px;
+}
+#resources{
+	width: 80px;
+}
+#resources:hover ~.dropbtn-content-3{
+	display: block;
+	position: absolute;
+	top: 118.7px;
+	left: 727px;
+	z-index: 1;
+}
+.dropbtn-content-3{
+	display: none;
+	position: relative;
+	min-width: 280px;
+	height: auto;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: 1px solid grey;
+}
+/*The drop down content container*/
+.dropbtn-content{
+	display: none;
+	position: relative;
+	min-width: 280px;
+	height: auto;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: 1px solid grey;
+}
+ul li{
+	list-style-type: none;
+	display: block;
+	margin: 10px;
+}
+ul li a{
+	color: grey;
+	text-decoration: none;
+	margin: 20px;
+	font-family: Tahoma;
+}
+.dropbtn-content-2{
+	display: none;
+	position: relative;
+	min-width: 280px;
+	height: auto;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: 1px solid grey;
+}
+#investing:hover ~ .dropbtn-content-2{
+	display: block;
+	position: absolute;
+	top: 118.7px;
+	left: 507px;
+	z-index: 1;
+}
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+.sign-up-info{
+	width: 40%;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.image{
+	width: 60%;
+	height: 520px;
+}
+#body-image{
+	width: 100%;
+	height: inherit;
+	transform: rotateX(30deg);
+}
+.sign-up-info h1{
+	text-align: left;
+	font-size: 50px;
+	color: black;
+	font-family: Tahoma;
+	margin: 150px auto;
+}
+.sign-up-info h3{
+	text-align: justify;
+	font-size: 12px;
+	color: grey;
+	font-family: Tahoma;
+	position: relative;
+	top: -120px;
+	left: 95px;
+	margin-right: 100px;
+}
+#sign-up-free{
+	width: 150px;
+	height: 40px;
+	background-color: orange;
+	border: none;
+	outline: none;
+	text-align: center;
+	color: white;
+	margin: auto;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#signup-link{
+	position: relative;
+	top: -80px;
+	left: 100px;
+}
+a .sign-up-free: hover{
+	cursor: pointer;
+}
+/*CSS for the sign up page*/
+.signup-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+.signup-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+	height: 60px;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.signup-header a, p{
+	text-decoration: none;
+	margin: 10px 5px;
+}
+#signup-button{
+	width: 100px;
+	height: 30px;
+	margin: 10px 25px 0 5px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background-color: #0077C5;
+	color: white;
+	text-align: center;
+}
+#signup-button:hover{
+	cursor: pointer;
+}
+.form-container{
+	width: 80%;
+	height: auto;
+	margin: auto;
+}
+.form-header{
+	display: flex;
+	flex-direction: column;
+	width: 35%;;
+	height: 50px;
+	margin: auto;
+	background-color: white;
+}
+.form-nav{
+	width: 100%;
+}
+#form-logo{
+	width: 100%;
+	height: 30px;
+	margin: auto;
+	background-blend-mode: color;
+}
+.form-head{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+label{
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 5px 0 -5px 10px;
+}
+input{
+	margin-top: 5px;
+}
+form{
+	box-shadow: 0 1px 0 0 silver;
+	border-radius: 2px;
+}
+#email,#phone,#pwd,#confirm-pwd{
+	width: 95%;
+	height: 30px;
+	margin: 20px auto;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid grey;
+}
+#create-account{
+	width: 95%;
+	margin: 15px auto;
+	height: 50px;
+	background-color: #0077C5;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-family: Tahoma;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+}
+#create-account:hover{
+	cursor: pointer;
+}
+.form-foot{
+	width: 100%;
+	height: 50px;
+	background-color: #ECEEF1;
+}
+.footer{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	top: 800px;
+}
+#footer-links{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	height: 20px;
+	margin: auto;
+	font-family: Tahoma;
+	font-size: 13px;
+	color: grey;
+	justify-content: center;
+}
+#footer-links a{
+	text-decoration: none;
+	color: grey;
+	margin: 0 10px;
+}
+#footer-links a:hover{
+	border-bottom: 1px solid grey;
+}
+.footer p{
+	font-family: Tahoma;
+	font-size: 12px;
+}
