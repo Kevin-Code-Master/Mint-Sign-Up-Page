@@ -406,7 +406,7 @@ form{
 	display: flex;
 	flex-direction: row;
 	height: 20px;
-	margin: auto;
+	margin: 5px auto;
 	font-family: Tahoma;
 	font-size: 13px;
 	color: grey;
